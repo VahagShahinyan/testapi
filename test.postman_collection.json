@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "17c1b80b-8c71-47c3-a147-ae62e8c9a9fa",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31284449",
+		"_collection_link": "https://universal-sunset-144893.postman.co/workspace/My-Workspace~7d82cd58-f31f-46f8-8951-beab66e6e93e/collection/31284449-17c1b80b-8c71-47c3-a147-ae62e8c9a9fa?action=share&source=collection_link&creator=31284449"
+	},
+	"item": [
+		{
+			"name": "create post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"groupId\": 1,\n\t\"text\": \"text\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/post"
+			},
+			"response": []
+		},
+		{
+			"name": "all post",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/post"
+			},
+			"response": []
+		},
+		{
+			"name": "create comment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:8000/comment"
+			},
+			"response": []
+		},
+		{
+			"name": "all comment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/comment"
+			},
+			"response": []
+		}
+	]
+}
